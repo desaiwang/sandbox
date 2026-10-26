@@ -1,0 +1,95 @@
+{
+  "text": "*apm-edge-reporter* — 1 active incident, 3 of 35 related services alerting",
+  "attachments": [
+    {
+      "color": "#8C1515",
+      "blocks": [
+        {
+          "type": "section",
+          "text": {
+            "type": "mrkdwn",
+            "text": "*1 Active Incident*"
+          }
+        },
+        {
+          "type": "context",
+          "elements": [
+            {
+              "type": "mrkdwn",
+              "text": "<!date^1792517040^{time}|1:24 PM>   `SEV-4`   <https://app.datadoghq.com/services/case-event-handler?env=prod|case-event-handler>   case-event-handler-linear falling behind on topic domain-events"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "color": "#8C1515",
+      "blocks": [
+        {
+          "type": "section",
+          "text": {
+            "type": "mrkdwn",
+            "text": "*3 of 35 Related Services Alerting*"
+          }
+        },
+        {
+          "type": "context",
+          "elements": [
+            {
+              "type": "mrkdwn",
+              "text": "<!date^1792516620^{time}|1:17 PM>   :arrow_up:   <https://app.datadoghq.com/services/case-store?env=prod|case-store>   paged <#C0CAZDLAB55>   |   acknowledged by <@U0BDZ2E0ZKM>"
+            }
+          ]
+        },
+        {
+          "type": "context",
+          "elements": [
+            {
+              "type": "mrkdwn",
+              "text": "<!date^1792516860^{time}|1:21 PM>   :arrow_up:   <https://app.datadoghq.com/services/kafka-domain-events?env=prod|kafka-domain-events>   paged <#C0CAZDN1E79>"
+            }
+          ]
+        },
+        {
+          "type": "context",
+          "elements": [
+            {
+              "type": "mrkdwn",
+              "text": "<!date^1792517160^{time}|1:26 PM>   :arrow_down:   <https://app.datadoghq.com/services/work-item-service?env=prod|work-item-service>   paged <#C0CAZDLAB55>   |   acknowledged by <@U0ABXHX08GK>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "color": "#E8730C",
+      "blocks": [
+        {
+          "type": "section",
+          "text": {
+            "type": "mrkdwn",
+            "text": "*2 Changes*"
+          }
+        },
+        {
+          "type": "context",
+          "elements": [
+            {
+              "type": "mrkdwn",
+              "text": "<!date^1792516320^{time}|1:12 PM>   <https://app.datadoghq.com/services/case-store?env=prod|case-store>   Deploy — v2841 rolled out to env:prod"
+            }
+          ]
+        },
+        {
+          "type": "context",
+          "elements": [
+            {
+              "type": "mrkdwn",
+              "text": "<!date^1792516380^{time}|1:13 PM>   <https://app.datadoghq.com/services/case-event-handler?env=prod|case-event-handler>   Crash Loop Backoff — new pods crashing in env:prod · golett-a, golett-c, golett-f"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
