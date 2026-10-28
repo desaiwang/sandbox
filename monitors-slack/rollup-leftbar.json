@@ -1,8 +1,39 @@
 {
-  "text": "*apm-edge-reporter* — 1 active incident, 3 of 35 related services alerting",
+  "text": "",
   "attachments": [
     {
-      "color": "#8C1515",
+      "color": "#BC2B3C",
+      "blocks": [
+        {
+          "type": "section",
+          "text": {
+            "type": "mrkdwn",
+            "text": "*<https://app.datadoghq.com/services/apm-edge-reporter?env=prod|apm-edge-reporter>* — Dependency Map as of <!date^1792517160^{time}|1:26 PM>"
+          }
+        },
+        {
+          "type": "image",
+          "image_url": "https://raw.githubusercontent.com/desaiwang/sandbox/951d2d6896fa82d3b38625b41605c97641d81ea8/monitors/simplified-1hop.png",
+          "alt_text": "1-hop dependency map for apm-edge-reporter"
+        },
+        {
+          "type": "actions",
+          "elements": [
+            {
+              "type": "button",
+              "text": {
+                "type": "plain_text",
+                "text": "View current state"
+              },
+              "url": "https://app.datadoghq.com/services/apm-edge-reporter?env=prod",
+              "action_id": "view_current_state"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "color": "#BC2B3C",
       "blocks": [
         {
           "type": "section",
@@ -23,7 +54,7 @@
       ]
     },
     {
-      "color": "#8C1515",
+      "color": "#BC2B3C",
       "blocks": [
         {
           "type": "section",
@@ -62,7 +93,7 @@
       ]
     },
     {
-      "color": "#E8730C",
+      "color": "#C15800",
       "blocks": [
         {
           "type": "section",
@@ -91,5 +122,6 @@
         }
       ]
     }
-  ]
+  ],
+  "blocks": []
 }

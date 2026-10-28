@@ -53,7 +53,14 @@ def call(method, body, token):
 
 
 def build(msg, channel):
-    body = {"channel": channel, "text": msg.get("text", "monitor rollup")}
+    body = {"channel": channel}
+    # An explicit empty/absent `text` is honoured, not defaulted: when a message
+    # has no top-level blocks, Slack RENDERS `text` as a line above the bars.
+    # Dropping it is the only way to suppress that line. Cost: weaker push
+    # notifications, since `text` is what the notification shows.
+    text = msg.get("text", "monitor rollup")
+    if text:
+        body["text"] = text
     for key in ("blocks", "attachments"):
         if key in msg:
             body[key] = msg[key]
